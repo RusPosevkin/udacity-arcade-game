@@ -80,7 +80,7 @@ var Engine = (function(global) {
      */
     function update(dt) {
         updateEntities(dt);
-        // checkCollisions();
+        checkCollisions();
     }
 
     /* This is called by the update function and loops through all of the
@@ -95,6 +95,23 @@ var Engine = (function(global) {
             enemy.update(dt);
         });
         player.update();
+    }
+
+    function checkCollisions() {
+      var playerPosition = player.getPosition();
+      var playerImageSize = player.getImageSize();
+
+      allEnemies.forEach(function(enemy) {
+        var enemyPosition = enemy.getPosition();
+        var enemyImageSize = enemy.getImageSize();
+
+        if ((playerPosition.x > enemyPosition.x - enemyImageSize.width/2) &&
+          (playerPosition.x <= enemyPosition.x + enemyImageSize.width/2) &&
+          (playerPosition.y + playerImageSize.height/2 > enemyPosition.y) &&
+          (playerPosition.y + playerImageSize.height/2 <= enemyPosition.y + enemyImageSize.height/2)) {
+            reset();
+          }
+      });
     }
 
     /* This function initially draws the "game level", it will then call
@@ -159,7 +176,13 @@ var Engine = (function(global) {
      * those sorts of things. It's only called once by the init() method.
      */
     function reset() {
-        // noop
+      allEnemies.forEach(function(enemy) {
+          enemy.reset();
+      });
+
+      player.reset();
+
+      console.log('You\'re lose');
     }
 
     /* Go ahead and load all of the images we know we're going to need to
