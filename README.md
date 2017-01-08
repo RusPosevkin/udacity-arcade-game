@@ -1,6 +1,13 @@
-frontend-nanodegree-arcade-game
-===============================
+# Udacity Arcade Game Project
+Arcade game based on Udacity boilerplate.
 
-Students should use this [rubric](https://review.udacity.com/#!/projects/2696458597/rubric) for self-checking their submission. Make sure the functions you write are **object-oriented** - either class functions (like Player and Enemy) or class prototype functions such as Enemy.prototype.checkCollisions, and that the keyword 'this' is used appropriately within your class and class prototype functions to refer to the object the function is called upon. Also be sure that the **readme.md** file is updated with your instructions on both how to 1. Run and 2. Play your arcade game.
+## How to start
+1. Clone this repository https://github.com/RusPosevkin/udacity-arcade-game.git
+2. Open index.html in the browser.
+3. Let's play!
 
-For detailed instructions on how to get started, check out this [guide](https://docs.google.com/document/d/1v01aScPjSWCCWQLIpFqvg3-vXLH2e8_SZQKC8jNO0Dc/pub?embedded=true).
+## Controls
+Use the arrow keys to move the hero.
+
+## What's the purpose
+Move to the water and avoid the moving enemies.
