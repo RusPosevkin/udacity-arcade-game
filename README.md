@@ -1,6 +1,9 @@
 # Udacity Arcade Game Project
 Arcade game based on Udacity boilerplate.
 
+## Demo
+Demo site: https://rusposevkin.github.io/udacity-arcade-game/
+
 ## How to start
 1. Clone this repository https://github.com/RusPosevkin/udacity-arcade-game.git
 2. Open index.html in the browser.
