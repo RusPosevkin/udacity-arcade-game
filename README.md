@@ -7,7 +7,10 @@ Demo site: https://rusposevkin.github.io/udacity-arcade-game/
 ![Demo animation](https://raw.githubusercontent.com/RusPosevkin/udacity-arcade-game/master/images/demo.gif "Demo animation")
 
 ## How to start
-1. Clone this repository https://github.com/RusPosevkin/udacity-arcade-game.git
+1. Clone this repository 
+  ```bash
+  $> git clone https://github.com/RusPosevkin/udacity-arcade-game.git
+  ```
 2. Open index.html in the browser.
 3. Let's play!
 
