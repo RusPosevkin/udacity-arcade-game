@@ -19,3 +19,7 @@ Use the arrow keys to move the hero.
 
 ## What's the purpose
 Move to the water and avoid the moving enemies.
+
+## License
+[MIT](LICENSE)
+
