@@ -1,5 +1,5 @@
 # Udacity Arcade Game Project
-Arcade game based on Udacity boilerplate.
+Arcade game. Move hero to water and don't collide with bugs.
 
 ## Demo
 Demo site: https://rusposevkin.github.io/udacity-arcade-game/
